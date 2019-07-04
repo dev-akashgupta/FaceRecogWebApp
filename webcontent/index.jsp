@@ -70,33 +70,25 @@
     }
     
     function add_good_face() {
-    	if(document.getElementById("face_name").innerHTML=='') {
-    		document.getElementById('results').innerHTML = 'Enter Unique Name to proceed.';
-   		} else {
    		// play sound effect
-   	        shutter.play();
-   	        // take snapshot and get image data
-   	        Webcam.snap( function(data_uri) {
-   	            // display results in page
-   	            document.getElementById('my_camera').innerHTML = '<img src="'+data_uri+'"/>';
-   	            upload_snapshot(data_uri, '<%=baseUrl%>api/addGoodFace');
-   	        } )
-   		}
+        shutter.play();
+        // take snapshot and get image data
+        Webcam.snap( function(data_uri) {
+            // display results in page
+            document.getElementById('my_camera').innerHTML = '<img src="'+data_uri+'"/>';
+            upload_snapshot(data_uri, '<%=baseUrl%>api/addGoodFace');
+        } );
     }
     
 	function add_bad_face() {
-		if(document.getElementById("face_name").innerHTML=='') {
-    		document.getElementById('results').innerHTML = 'Enter Unique Name to proceed.';
-   		} else {
    		// play sound effect
-   	        shutter.play();
-   	        // take snapshot and get image data
-   	        Webcam.snap( function(data_uri) {
-   	            // display results in page
-   	            document.getElementById('my_camera').innerHTML = '<img src="'+data_uri+'"/>';
-   	            upload_snapshot(data_uri, '<%=baseUrl%>api/addBadFace');
-   	        } )
-   		}
+        shutter.play();
+        // take snapshot and get image data
+        Webcam.snap( function(data_uri) {
+            // display results in page
+            document.getElementById('my_camera').innerHTML = '<img src="'+data_uri+'"/>';
+            upload_snapshot(data_uri, '<%=baseUrl%>api/addBadFace');
+        } );
     }
     
     function upload_snapshot(data_uri, uri) {
