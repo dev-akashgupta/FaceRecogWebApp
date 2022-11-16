@@ -10,7 +10,7 @@
   
 	<properties>
 		<spring.version>4.1.7.RELEASE</spring.version>
-		<jackson.version>2.6.1</jackson.version>
+		<jackson.version>2.12.7.1</jackson.version>
         <tomcat.version>9.0.21</tomcat.version>
         <aws.version>1.11.401</aws.version>
 	</properties>
